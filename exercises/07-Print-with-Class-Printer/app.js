@@ -13,9 +13,13 @@ class Printer{
     printerTest() { 
         return `My brand is ${this._brand} and my model ${this._model}`; 
     } 
-    
+    getModel(){
+        return this._model
+
+
+    }
     //you can add new class functions here
 }
 
 let epsonPrinter = new Printer();
-console.log("The model of the printer is: "+epsonPrinter.getModel());
+console.log("The model of the printer is: "+  new Printer().getModel());
